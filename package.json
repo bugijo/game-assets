@@ -1,0 +1,12 @@
+{
+  "name": "chronosnatch",
+  "version": "1.0.0",
+  "description": "Jogo de viagem no tempo com coleta de relíquias",
+  "main": "main.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+} 

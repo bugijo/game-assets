@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Linhas do Tempo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+</head>
+<body>
+    <div id="loading">Carregando...</div>
+    <div id="error" style="display: none; color: red;"></div>
+    <div id="game"></div>
+    <script>
+        // Verificar se o Phaser foi carregado
+        window.onload = function() {
+            if (typeof Phaser === 'undefined') {
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Erro: Phaser não foi carregado corretamente';
+            } else {
+                document.getElementById('loading').style.display = 'none';
+            }
+        };
+    </script>
+    <script src="main.js"></script>
+</body>
+</html> 
